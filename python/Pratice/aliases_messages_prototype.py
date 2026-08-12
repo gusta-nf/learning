@@ -1,4 +1,3 @@
-var = ''
 dicio = {}
 lista = []
 while True:
