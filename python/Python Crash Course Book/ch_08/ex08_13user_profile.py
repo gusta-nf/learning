@@ -1,4 +1,5 @@
 def build_profile(first, last, **info):
+    '''Create a dicionary with profile informations, with name parts default.'''
     profile = {}
     profile["first_name"] = first
     profile["last_name"] = last
