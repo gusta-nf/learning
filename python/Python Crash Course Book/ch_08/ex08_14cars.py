@@ -1,4 +1,5 @@
 def make_car(made, model, **info):
+    '''Create a dicionary with car informations, with model and made default.'''
     data = {}
     data['made'] = made
     data['model'] = model
