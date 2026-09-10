@@ -1,3 +1,7 @@
+''' A sua lógica principal para o cálculo da média está certa,
+ mas há dois erros de intervalo/comparação nas condicionais que podem fazer
+ o programa falhar ou se comportar de forma estranha,'''
+
 # Explicando ao usuário
 print("\tCalculadora de média e situação do aluno\n" +
       "(Caso tenha números com vírgula use . no lugar da vírgula)")
