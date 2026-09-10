@@ -1,0 +1,111 @@
+ATIVIDADE PRÁTICA – PYTHON 
+
+Desenvolvimento de 6 Scripts 
+
+ 
+
+Objetivo: desenvolver seis programas independentes utilizando fundamentos da linguagem Python, incluindo entrada e saída de dados, estruturas condicionais, repetição, listas, dicionários e funções. 
+
+Orientação: crie um arquivo .py para cada questão, utilizando nomes como questao_01.py, questao_02.py e assim sucessivamente. Inclua comentários explicando as principais partes do código. 
+
+1. Calculadora de média e situação do aluno 
+
+Crie um programa que solicite o nome de um aluno e suas três notas. O programa deverá calcular a média e informar: 
+
+• Aprovado, se média ≥ 7; 
+
+• Recuperação, se média entre 5 e 6,9; 
+
+• Reprovado, se média < 5. 
+
+Ao final, exiba o nome do aluno, a média obtida e sua situação. 
+
+2. Analisador de números 
+
+Solicite ao usuário 10 números inteiros e armazene-os em uma lista. Depois, apresente: 
+
+• maior número; 
+
+• menor número; 
+
+• soma dos números; 
+
+• média; 
+
+• quantidade de números pares; 
+
+• quantidade de números ímpares. 
+
+3. Sistema simples de cadastro 
+
+Desenvolva um programa que permita cadastrar 5 pessoas, armazenando: 
+
+• nome; 
+
+• idade; 
+
+• cidade. 
+
+Ao final, mostre todos os cadastrados e informe também: 
+
+• pessoa mais velha; 
+
+• pessoa mais jovem; 
+
+• média de idade do grupo. 
+
+Utilize listas e/ou dicionários. 
+
+4. Simulador de caixa eletrônico 
+
+Crie um programa que receba um valor inteiro para saque e determine quantas notas serão necessárias, considerando notas de R$ 100, R$ 50, R$ 20, R$ 10, R$ 5 e R$ 2. 
+
+Exemplo: para um saque de R$ 286, o sistema deverá calcular automaticamente a distribuição das notas. 
+
+Caso o valor não possa ser representado exatamente pelas notas disponíveis, o programa deverá informar o problema ao usuário. 
+
+5. Função para análise de senha 
+
+Crie uma função chamada validar_senha() que receba uma senha e verifique se ela possui: 
+
+• pelo menos 8 caracteres; 
+
+• pelo menos uma letra maiúscula; 
+
+• pelo menos uma letra minúscula; 
+
+• pelo menos um número. 
+
+O programa deverá retornar se a senha é válida ou inválida e informar quais requisitos não foram atendidos. 
+
+6. Mini sistema de controle de vendas 
+
+Crie um programa que permita registrar várias vendas. Para cada venda, solicite: 
+
+• nome do produto; 
+
+• quantidade; 
+
+• preço unitário. 
+
+O cadastro deverá continuar até que o usuário escolha encerrar. 
+
+Ao final, apresente: 
+
+• quantidade total de itens vendidos; 
+
+• valor total das vendas; 
+
+• produto que gerou maior faturamento; 
+
+• produto com maior quantidade vendida; 
+
+• ticket médio das vendas. 
+
+Desafio adicional: organize o código utilizando pelo menos duas funções. 
+
+ENTREGA 
+
+Cada aluno deverá entregar os 6 arquivos .py, devidamente identificados e funcionando. Além do código, cada script deve apresentar pelo menos um exemplo de execução/teste. 
+
+Importante: é permitido utilizar Inteligência Artificial como ferramenta de apoio para pesquisa e esclarecimento de dúvidas. Entretanto, o aluno deverá ser capaz de explicar o funcionamento do código desenvolvido. 
