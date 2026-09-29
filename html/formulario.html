@@ -12,20 +12,25 @@
         
         <form id="BoletimMensal" method="POST" action="agradecimento.html"> <!-- form é o formulário, onde será recebido os dados-->
             <p>
-                <label for="nome"> Nome: </label> 
-                <input type="text" name="nome" id="nomeBoletimMensal" size="50">
-                
-                <br>
-                <label for="email"> Email: </label> 
-                <input type="email" name="email" id="emailBoletimMensal" size="50">
-                <br>
-
-                <label for="estado"> Estado: </label>
-                <select name="estado" id="estadoBoletimMensal">
-                    <option value="RJ"> Rio de janeiro </option>
-                    <option value="SP"> São Paulo </option>
-                    <option value="MG"> Minas Gerais </option>
-                </select>
+            <fieldset>
+                    <legend> Informações pessoais</legend>
+                    <label for="nome"> Nome: </label> 
+                    <input type="text" name="nome" id="nomeBoletimMensal" size="50">
+                    
+                    <br>
+                    <label for="email"> Email: </label> 
+                    <input type="email" name="email" id="emailBoletimMensal" size="50">
+                    <br>
+                    <label for="telefone">Telefone: </label>
+                    <input type="text" name="telefone" id="telefoneBoletimMensal" placeholder="(xx) xxxxx-xxxx"
+                    <br>
+                    <label for="estado"> Estado: </label>
+                    <select name="estado" id="estadoBoletimMensal">
+                        <option value="RJ"> Rio de janeiro </option>
+                        <option value="SP"> São Paulo </option>
+                        <option value="MG"> Minas Gerais </option>
+                    </select>
+                </fieldset>
             </p>
             <p>
                 <label for="conteudo"> Escolha seu conteúdo: </label>
