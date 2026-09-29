@@ -13,11 +13,11 @@
         <form id="BoletimMensal" method="POST" action="agradecimento.html"> <!-- form é o formulário, onde será recebido os dados-->
             <p>
                 <label for="nome"> Nome: </label> 
-                <input type="text" name="nome" id="nomeBoletimMensal">
+                <input type="text" name="nome" id="nomeBoletimMensal" size="50">
                 
                 <br>
                 <label for="email"> Email: </label> 
-                <input type="email" name="email" id="emailBoletimMensal">
+                <input type="email" name="email" id="emailBoletimMensal" size="50">
                 <br>
 
                 <label for="estado"> Estado: </label>
@@ -33,6 +33,11 @@
                 <input type="radio" name="conteudo" value="pop"> Pop
                 <input type="radio" name="conteudo" value="setarnejo"> Sertanejo
                 <input type="radio" name="conteudo" value="gospel"> Gospel
+
+                <br>
+                
+                <label for="comentario">Comentário: </label>
+                <textarea id="comentarioBoletimMensal" placeholder="Escreva um comentário sobre o conteúdo escolhido." rows="5" cols="50"></textarea>
             </p>
             <p>
                 <input type="submit" name="enviar" value="Inscrever-se">
