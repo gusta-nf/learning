@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="utf-8"/>
+        <title> Teste de Formulários </title>
+    </head>
+<!-- Comentário -->
+    <body> 
+        <h1> Formulário </h1>
+
+        <h2> Boletim mensal</h2>
+        
+        <form> <!-- form é o formulário, onde será recebido os dados-->
+            <p>
+                <label for="nome"> Nome: </label> 
+                <input type="text" name="nome" id="nomeBoletimMensal">
+                <br>
+                <label for="email"> Email: </label> 
+                <input type="email" name="email" id="emailBoletimMensal">
+            </p>
+            <p>
+                <label for="conteudo"> Escolha seu conteúdo: </label>
+                <input type="radio" name="conteudo" value="rock"> Rock
+                <input type="radio" name="conteudo" value="pop"> Pop
+                <input type="radio" name="conteudo" value="setarnejo"> Sertanejo
+                <input type="radio" name="conteudo" value="gospel"> Gospel
+            </p>
+            <p>
+                <input type="submit" name="enviar" value="Inscrever-se">
+            </p>
+        </form>
+    </body>
+</html>
