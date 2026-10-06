@@ -11,6 +11,13 @@ h2 {
     font-size: 1.75em;
 }
 
+h2#estiloMusical {
+    background-image: url("../pics/bg-dot.png");
+    background-repeat: repeat;
+    background-position: center center;
+    color: #0a5c0a;
+}
+
 p {
     font-size: 1.1em;
     line-height: 1.3em;
