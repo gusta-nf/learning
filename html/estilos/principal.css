@@ -7,10 +7,23 @@ h2 {
     font-size: 1.75em;
 }
 
+p {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
 /*
 
 seletor {
     propriedade: valor;
 }
+
+1em = 16px
+1.75em vezes 16 é igual a fonte que seria utilizada em um documento
+
+font-variant: small-caps;  --> caixa-alta
+font-weight: bolder; --> coloca em negrito
+font-style: italic; -->  coloca em italico
 
 */
