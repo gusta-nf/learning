@@ -12,9 +12,9 @@ h2 {
 }
 
 h2#estiloMusical {
-    background-image: url("../pics/bg-dot.png");
-    background-repeat: repeat;
-    background-position: center center;
+    background-image: url("../pics/musica.jpg"), url("../pics/bg-dot.png");
+    background-repeat: no-repeat, repeat;
+    background-position: center right, center center;
     color: #0a5c0a;
 }
 
