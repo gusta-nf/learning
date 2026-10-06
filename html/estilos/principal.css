@@ -15,7 +15,10 @@ h2#estiloMusical {
     background-image: url("../pics/musica.jpg"), url("../pics/bg-dot.png");
     background-repeat: no-repeat, repeat;
     background-position: center right, center center;
+    padding: 61px 550px 61px 75px;
     color: #0a5c0a;
+    font-size: 1.7em;
+    letter-spacing: .1em;
 }
 
 p {
@@ -44,6 +47,24 @@ p.modificada {
 
 hr {
     border-color: #98a869;
+}
+
+figure {
+    border: #C0262C solid thin;
+    border-radius: 35px 35px 0 0;
+    padding: 20px 0 0;
+    text-align: center;
+    width: 500px;
+}
+
+figcaption {
+    background-color: #C0262C;
+    color: #FFFFFF;
+    font-style: italic;
+    padding: 7px 0;
+    text-align: center;
+    font-size: 1.1em;
+    width: 500px;
 }
 
 /*
