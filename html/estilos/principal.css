@@ -68,6 +68,18 @@ figcaption {
 }
 
 /*
+CASO SEJAM DUAS IMAGENS
+
+.imagemEsquerda {
+    margin-right:10px;
+}
+
+.imagemDireita {
+    margin-left: 10px;
+}
+*/
+
+/*
 
 seletor {
     propriedade: valor;
