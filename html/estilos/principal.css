@@ -67,6 +67,42 @@ figcaption {
     width: 500px;
 }
 
+ul li.jogos {
+    list-style-type: none;
+    list-style-image: url("../pics/game.png");
+    list-style-position:  inside;
+    margin: 10px 0;
+}
+
+dt {
+    color: #FFF;
+    background-color: #C0262C;
+    padding: 7px;
+}
+
+ol#listaDisciplinas {
+    list-style-type: none;
+    white-space: pre;
+    line-height: .9em;
+    counter-reset: contador;
+}
+
+
+ol li.disciplinas:before {
+    color: #999999;
+    counter-increment: contador;
+    content: "Disciplina " counter(contador) "\0020" "\00BB";
+    margin-right: 5px;
+}
+
+dd {
+    border: thin #C0262C solid;
+    border-radius: 0 0 25px 25px;
+    margin-top: -3px;
+    margin-bottom: 30px;
+    padding: 20px 20px 0;
+}
+
 /*
 CASO SEJAM DUAS IMAGENS
 
