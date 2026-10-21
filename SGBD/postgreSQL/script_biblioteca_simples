@@ -1,0 +1,80 @@
+CREATE TABLE Autor (
+id_autor INTEGER NOT NULL,
+nome_autor VARCHAR(100) NOT NULL,
+nacionalidade VARCHAR(50),
+CONSTRAINT pk_autor PRIMARY KEY(id_autor)
+);
+
+CREATE TABLE Editora (
+id_editora INTEGER NOT NULL,
+nome_editora VARCHAR(100) NOT NULL,
+cidade VARCHAR(50),
+CONSTRAINT pk_editora PRIMARY KEY(id_editora)
+);
+
+CREATE TABLE Livro (
+isbn VARCHAR(20) NOT NULL,
+titulo VARCHAR(255) NOT NULL,
+ano_publicacao INTEGER,
+id_autor INTEGER,
+id_editora INTEGER,
+CONSTRAINT pk_livro PRIMARY KEY(isbn),
+CONSTRAINT fk_autor FOREIGN KEY(id_autor)
+	REFERENCES Autor(id_autor)
+	ON UPDATE CASCADE
+	ON DELETE RESTRICT,
+CONSTRAINT fk_editora FOREIGN KEY(id_editora)
+	REFERENCES Editora(id_editora)
+	ON UPDATE CASCADE
+	ON DELETE RESTRICT
+);
+
+CREATE TABLE Membro (
+id_membro INTEGER NOT NULL,
+nome_membro VARCHAR(100) NOT NULL,
+telefone VARCHAR(15),
+CONSTRAINT pk_membro PRIMARY KEY(id_membro)
+);
+
+CREATE TABLE Emprestimo (
+id_emprestimo INTEGER NOT NULL,
+isbn_livro VARCHAR(20),
+id_membro INTEGER,
+data_emprestimo DATE NOT NULL,
+data_devolucao DATE,
+CONSTRAINT pk_emprestimo PRIMARY KEY(id_emprestimo),
+CONSTRAINT fk_livro FOREIGN KEY(isbn_livro)
+	REFERENCES Livro(isbn)
+	ON UPDATE CASCADE
+	ON DELETE RESTRICT,
+CONSTRAINT fk_membro FOREIGN KEY(id_membro)
+	REFERENCES Membro(id_membro)
+	ON UPDATE CASCADE
+	ON DELETE RESTRICT
+);
+
+INSERT INTO Autor (id_autor, nome_autor, nacionalidade) VALUES
+(1, 'William Shotts', 'Estados Unidos'),
+(2, 'Andrew Stuart Tanenbaum', 'Holândes');
+
+INSERT INTO Editora (id_editora, nome_editora, cidade) VALUES
+(101, 'NovaTec', 'São Paulo'),
+(102, 'No Starch Press', 'San  Francisco');
+-- LAMENTO PROFESSOR DEPOIS DISSO CANSEI DE PESQUISAR PARA FICAR COM BONS EXEMPLOS COPIEI VÁRIOS SEUS, PORÉM FIZ QUESTÃO DE DIGITAR TODOS COMANDOS
+INSERT INTO Livro (isbn, titulo, ano_publicacao, id_autor, id_editora) VALUES
+('978-8573264421', 'Dom Casmurro', 1899, 1, 101),
+('978-8535914840', 'Orgulho e Preconceito', 1813, 2, 102);
+
+INSERT INTO Membro (id_membro, nome_membro, telefone) VALUES
+(201, 'Izaque', '51987654321'),
+(202, 'Gustavo', '21912345678');
+
+INSERT INTO Emprestimo (id_emprestimo, isbn_livro, id_membro, data_emprestimo, data_devolucao) VALUES
+(1, '978-8573264421', 201, '2026-04-01', NULL),
+(2, '978-8535914840', 202, '2026-04-10', '2026-04-25');
+
+ALTER TABLE Membro ADD data_cadastro DATE;
+
+UPDATE Editora SET nome_editora = 'Editora Alpha' WHERE id_editora = 101;
+
+UPDATE Membro SET data_cadastro = '06-10-2026';
