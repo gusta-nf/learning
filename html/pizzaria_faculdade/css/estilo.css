@@ -1,0 +1,61 @@
+html{
+font-family: "Trebuchet MS", sans-serif;
+display: flex;
+text-align: center;
+justify-content: center;
+}
+
+img{
+    border: 10px;
+    border-color: brown;
+    border-style: groove;
+}
+
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+body{
+    border-radius: 25px;
+    border-color: brown;
+    border-style:groove;
+    background-color: bisque;
+}
+
+a{
+margin: 40px
+}
+
+a:hover{
+    color: brown;
+}
+
+dd{
+line-height: 35px;
+}
+
+dt{
+    padding-top: 35px;
+}
+
+/*
+Para colocar o título da página cardápio destacado em vermelho/marrom
+*/
+#Maneiro{
+    color: brown;
+}
+
+#logo{
+    width: 100%;
+    height: 400px;
+}
+
+/*
+Para destacar os nomes das pizzas disponíveis na pizzaria maneira
+*/
+.pizza{
+    color: crimson;
+}
